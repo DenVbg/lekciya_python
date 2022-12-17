@@ -11,4 +11,4 @@ num2 = int(input("num2 = "))
 if num1 == num2**2 or num2== num1**2:
     print("YES")
 else:
-    print("NO, числа не являются квадратами друг друга"5)
+    print("NO, числа не являются квадратами друг друга")
