@@ -11,17 +11,20 @@
 
 #text = ["qwe", "asd", "zxc", "qwe", "ertqwe"] # ищем: "qwe", ответ: 3
 #search = "qwe"
-text = ["йцу", "фыв", "ячс", "цук", "йцукен"] #, ищем: "йцу", ответ: -1
-search = "йцу"
+#text = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"] # ищем: "йцу", ответ: 5
+#search = "йцу"
+#text = ["123", "234", 123, "567"] # ищем: "123", ответ: -1
+#search = "123"
+#text = ["йцу", "фыв", "ячс", "цук", "йцукен"] # ищем: "йцу", ответ: -1
+#search = "йцу"
 position = 2
 def find_text(text, position):
     count = 0
     for i in range(len(text)):
-        if search in text[i]:
+        if search == text[i]:
             count += 1
             if count == position:
                 return i
-                break
     else:
         return -1
 
