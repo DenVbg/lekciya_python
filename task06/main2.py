@@ -3,16 +3,13 @@
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
 
-# n = abs(int(input("Введите число: ")))
-# list = []
-# for i in range(n):
-#     number = float((1 + 1/n)**n)
-#     list.append(number)
-#     sum += number
-# print(f"Сумма элементов {sum}")
-# print(list)
-
-list1 = ['hi', 'welcome']
-list2 = list1
-list2.append('bro')
-print(list1[-1])
+n = abs(int(input("Введите число: ")))
+my_list = []
+my_sum = 0
+for i in range(1,n+1):
+    number = round((1 + 1/i)**i, 2)
+    if 
+    my_list.append(number)
+    my_sum += number
+print(my_list)
+print(f"Сумма элементов {my_sum}")
